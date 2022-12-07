@@ -6,3 +6,17 @@
 .input-container {
     justify-content: space-between;
 }
+
+.submit-btn-container {
+    align-items: center;
+    justify-content: center;
+}
+
+.submit-btn {
+    padding: 4px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    border: 2px solid blakc;
+    background: lightcyan;
+}
