@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body class="full-layout flex column">
+<body class="full-layout flex column" onload="onInit()">
     <header class="full-layout flex row">
         <div class="main-layout flex row header-container">
             <h2 class="logo">Placekeeper</h2>
+            <h5>Hello <span class="first-name"></span></h5>
             <nav>
                 <ul class="flex row navlinks-container">
                     <li>
@@ -35,6 +36,8 @@
     <script src="js/services/storage-service.js"></script>
     <script src="js/services/user-service.js"></script>
     <script src="js/services/place-service.js"></script>
+    <script src="js/controllers/user-controller.js"></script>
+    <script src="js/controllers/app-controller.js"></script>
 </body>
 
 </html>
