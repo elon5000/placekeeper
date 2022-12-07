@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Placekeeper - User prefernces</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/user-prefs.css">
 </head>
 
 <body class="full-layout flex column">
@@ -25,8 +26,31 @@
             </nav>
         </div>
     </header>
-    <main class="full-layout">
-        <form onsubmit="onSumbitUserPrefs()"></form>
+    <main class="full-layout flex column">
+        <div class="main-layout flex column main-container">
+            <form class="flex column user-prefs-form" onsubmit="onSumbitUserPrefs(this)">
+                <div class="flex row input-container">
+                    <label for="fName">First name</label>
+                    <input id="fName" type="text" placeholder="First name" required>
+                </div>
+                <div class="flex row input-container">
+                    <label for="bgColor">Background color</label>
+                    <input id="bgColor" type="color">
+                </div>
+                <div class="flex row input-container">
+                    <label for="fontColor">Font color</label>
+                    <input id="fontColor" type="color">
+                </div>
+                <div class="flex row input-container">
+                    <label for="zoomFactor">Zoom factor</label>
+                    <input id="zoomFactor" type="range" min="1" max="21">
+                </div>
+                <div class="flex row input-container">
+                    <label for="startLocation">Zoom factor</label>
+                    <input id="startLocation" type="text" placeholder="Seperate with commas">
+                </div>
+            </form>
+        </div>
     </main>
     <footer class="full-layout flex row">
         <h5 class="main-layout copyrights">Copyrights ©2022</h5>

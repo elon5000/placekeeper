@@ -49,6 +49,7 @@ header {
 
 nav {
     flex: 0.22;
+    flex-basis: 100px;
 }
 
 .navlinks-container {
@@ -59,7 +60,13 @@ nav {
 
 main {
     flex: 1;
+    align-items: center;
     background: lightgoldenrodyellow;
+}
+
+.main-container {
+    flex: 1;
+    justify-content: center;
 }
 
 footer {

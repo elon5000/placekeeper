@@ -1,0 +1,8 @@
+.user-prefs-form {
+    flex: 0.4;
+    justify-content: space-around;
+}
+
+.input-container {
+    justify-content: space-between;
+}
