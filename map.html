@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script type="module" src="index.js"></script>
     <title>Placekeeper - Map</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -26,8 +28,13 @@
             </nav>
         </div>
     </header>
-    <main class="full-layout">
-        <form onsubmit="onSumbitUserPrefs()"></form>
+    <main class="flex column full-layout">
+        <div class="main-layout flex row map-app-container">
+            <div class="flex column map-container">
+                <div id="map"></div>
+            </div>
+            <div class="locations-container">Locations</div>
+        </div>
     </main>
     <footer class="full-layout flex row">
         <h5 class="main-layout copyrights">Copyrights ©2022</h5>
@@ -38,6 +45,9 @@
     <script src="js/services/place-service.js"></script>
     <script src="js/controllers/user-controller.js"></script>
     <script src="js/controllers/app-controller.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=PLEASE_DONT_TAKE_MY_KEYYYY=initMap&v=weekly"
+        defer></script>
 </body>
 
 </html>
