@@ -10,7 +10,6 @@ function getUserPref() {
 
 function getUserPrefLoc() {
     const locs = gUserPref.startLocation.split(',')
-    console.log(locs)
     return {
         lat: +locs[0],
         lng: +locs[1]
